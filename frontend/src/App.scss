@@ -1,0 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.Container_Principal {
+  display: grid;
+  grid-template-columns: 0.1fr 0.9fr;
+}

@@ -1,0 +1,110 @@
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.RepotsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2vh;
+}
+.FilterContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 2vh;
+  border-bottom: 1px solid #eff3f9;
+  font-size: 3vh;
+}
+.containerTable {
+  align-self: center;
+  width: 98%;
+}
+.trHead {
+  background-color: rgb(197, 6, 6);
+  color: white;
+  border: 1px solid rgb(197, 6, 6);
+
+  & td {
+    padding: 1vh 1vw;
+  }
+}
+.trBody {
+  & tr:nth-child(1) td {
+    border-top: none;
+  }
+  & .redLetter {
+    color: rgb(235, 3, 3);
+  }
+  & .status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5vh 0;
+    background-color: rgba(138, 197, 236, 0.603);
+    border-radius: 1rem;
+    width: 100%;
+    height: 100%;
+  }
+  & td {
+    border: 1px solid grey;
+    padding: 0.4vh 1vw;
+    & div {
+      display: flex;
+      gap: 1vh;
+    }
+  }
+}
+.ClientNoSelected {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5vh;
+}
+
+.inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5vw;
+  user-select: none;
+  & .input {
+    padding: 0.5vh 1vw;
+    border-radius: 1rem;
+    border: 1px solid grey;
+    display: flex;
+    font-size: 1.2vh;
+    flex-direction: column;
+    justify-content: center;
+    & input {
+      border: none;
+      outline: none;
+      & :focus {
+        border: none;
+        outline: none;
+      }
+    }
+  }
+}
+.containerArrows {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  & .Arrows {
+    padding: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.containerNumbers {
+  display: flex;
+  gap: 0.5vh;
+}
+.numbersPagination {
+  padding: 0.2vh;
+}
+.activeNumber {
+  border-bottom: 2px solid rgba(138, 197, 236, 0.603);
+}

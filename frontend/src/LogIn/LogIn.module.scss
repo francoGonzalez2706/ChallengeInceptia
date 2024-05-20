@@ -1,0 +1,51 @@
+.container_LogIn {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://e0.pxfuel.com/wallpapers/657/926/desktop-wallpaper-blur-blur-studio-blur-bizarre-and-blur.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container_Modal {
+  border: 1px solid grey;
+  background-color: white;
+  border-radius: 2rem;
+  padding: 5%;
+  width: 20vw;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-shadow: 0px 0px 30px -12px rgba(0, 0, 0, 0.75);
+  & .Inputs {
+    border: 1px solid grey;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    & input {
+      padding: 0.5rem 1rem;
+      outline: none;
+      border: none;
+      width: 100%;
+      border-radius: 10rem;
+      &:focus {
+        background: rgba(223, 223, 223, 0.459);
+      }
+    }
+  }
+
+  & .btnSingIn {
+    background-color: rgb(57, 228, 51);
+    border: none;
+    border-radius: 20rem;
+    padding: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

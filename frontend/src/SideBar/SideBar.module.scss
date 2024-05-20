@@ -1,0 +1,28 @@
+.Container_Sidebar {
+  height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  background-color: #eff3f9;
+  & .titleClient {
+    padding: 1vh 2vh;
+    font-size: 3vh;
+  }
+}
+.client {
+  cursor: pointer;
+  padding: 1vh;
+}
+.active {
+  background-color: #d0e0f8;
+  border-right: 2px solid rgb(47, 120, 255);
+}
+.ContainerLoader {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
